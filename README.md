@@ -31,10 +31,24 @@ Features
 Comparison
 ----------
 
-(TODO)
+|                                  | MeCab                                              | ChaSen                                      | JUMAN                              | KAKASI                   |
+|----------------------------------|----------------------------------------------------|---------------------------------------------|------------------------------------|--------------------------|
+| Analysis model                   | bi-gram Markov mode                                | variable length Markov model                | bi-gram MarKov model               | longest match            |
+| Cost estimation                  | learning from corpus                               | learning from corpus                        | manpower                           | there is no cost concept |
+| Learning model                   | CRF(identification model)                          | HMM(generation model)                       |                                    |                          |
+| Dictionary lookup algorithm      | Double Array                                       | Double Array                                | Patricia tree                      | Hash?                    |
+| Solution search algorithm        | Viterbi                                            | Viterbi                                     | Viterbi                            | Definitive?              |
+| Articulated table implementation | two dimensions table                               | automaton                                   | two dimensions table?              | no articulated table?    |
+| Part of speech hierarchy         | unrestrained multi-hierarchy part of speech        | unrestrained multi-hierarchy part of speech | fixed to 2 hierarchy               | no part of speech?       |
+| Unknown word processing          | character kind(behavior definition can be changed) | character king(can not be changed)          | character king(can not be changed) |                          |
+| Analysis with limitation         | possible                                           | possible at 2.4.0                           | impossible                         | impossible               |
+| N-best solutions                 | possible                                           | impossible                                  | impossible                         | impossible               |
 
 Mailing List
 ------------
+
+* [Mailing list for general user](http://lists.osdn.me/mailman/listinfo/mecab-users)
+* [Mailing list for developer](http://lists.osdn.me/mailman/listinfo/mecab-devel)
 
 Changelog
 ---------
@@ -185,7 +199,7 @@ But the estimation's accuracy is not so much high.  If you want to always output
 
 ### N-Best Solution Output
 
-(TODO)
+By using -N #NUM option, MeCab outputs most likely #NUM solutions. Theoretically, all possible solutions can be output, but, it is limited to 512 maximally with output's buffer size in mind.
 
     % mecab -N2
     今日もしないとね。
