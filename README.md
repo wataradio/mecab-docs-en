@@ -40,7 +40,7 @@ Comparison
 | Solution search algorithm        | Viterbi                                            | Viterbi                                     | Viterbi                            | Definitive?              |
 | Articulated table implementation | two dimensions table                               | automaton                                   | two dimensions table?              | no articulated table?    |
 | Part of speech hierarchy         | unrestrained multi-hierarchy part of speech        | unrestrained multi-hierarchy part of speech | fixed to 2 hierarchy               | no part of speech?       |
-| Unknown word processing          | character kind(behavior definition can be changed) | character king(can not be changed)          | character king(can not be changed) |                          |
+| Unknown word processing          | character kind(behavior definition can be changed) | character kind(can not be changed)          | character kind(can not be changed) |                          |
 | Analysis with limitation         | possible                                           | possible at 2.4.0                           | impossible                         | impossible               |
 | N-best solutions                 | possible                                           | impossible                                  | impossible                         | impossible               |
 
