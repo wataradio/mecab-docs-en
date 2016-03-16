@@ -31,7 +31,14 @@ Features
 Comparison
 ----------
 
-(TODO)
+|                             | MeCab                     | ChaSen                       | JUMAN                | KAKASI                   |
+|-----------------------------|---------------------------|------------------------------|----------------------|--------------------------|
+| Analysis model              | bi-gram Markov mode       | variable length Markov model | bi-gram MarKov model | longest match            |
+| Cost estimation             | learning from corpus      | learning from corpus         | manpower             | there is no cost concept |
+| Learning model              | CRF(identification model) | HMM(generation model)        |                      |                          |
+| Dictionary lookup algorithm | Double Array              | Double Array                 | Patricia tree        | Hash?                    |
+| Solution search algorithm   | Viterbi                   | Viterbi                      | Viterbi              | Definitive?              |
+|                             |                           |                              |                      |                          |
 
 Mailing List
 ------------
