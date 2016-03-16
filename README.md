@@ -185,7 +185,7 @@ But the estimation's accuracy is not so much high.  If you want to always output
 
 ### N-Best Solution Output
 
-(TODO)
+By using -N #NUM option, MeCab outputs most likely #NUM solutions. Theoretically, all possible solutions can be output, but, it is limited to 512 maximally with output's buffer size in mind.
 
     % mecab -N2
     今日もしないとね。
